@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "logo header header header header"
+    "nav nav nav nav nav"
+    "sidebar main main main main";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  border: 1px solid #000;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #ffcc99;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.logo img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.website {
+  grid-area: header;
+  background-color: #ffcc99;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #ffe6cc;
+  border-bottom: 1px solid #000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+nav ul li {
+  border-right: 1px solid #000;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #fff2e6;
+  border-right: 1px solid #000;
+}
+
+aside p{
+    text-align: left;
+}
+
+input{
+    border: 3px solid black;
+}
+
+.submit,
+.reset{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.info,
+.home {
+  grid-area: main;
+  height: 100%;
+  width: 100%;
+}
+
+.home-page,
+.login-page,
+.registration-page,
+.catalogue-page,
+.cart-page {
+  display: none;
+}
+
+.home-page {
+  display: block;
+}
+
+#home:target,
+#login:target,
+#registration:target,
+#catalogue:target,
+#cart:target {
+  width: 100%;
+  background-color: white;
+  display: block;
+}

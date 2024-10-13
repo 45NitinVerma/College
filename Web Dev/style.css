@@ -1,8 +1,8 @@
 body {
-  padding: 0;
+  margin: 5rem;
   height: 100%;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .center {
@@ -33,6 +33,9 @@ body {
 .logo img {
   height: 5rem;
   width: 5rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .website {
@@ -41,6 +44,7 @@ body {
   padding: 10px;
   border-bottom: 1px solid #000;
   font-weight: 600;
+  font-size: x-large;
 }
 
 nav {
@@ -69,25 +73,28 @@ nav ul li a {
   color: #000;
 }
 
-aside {
+.sidebar {
   grid-area: sidebar;
   background-color: #fff2e6;
   border-right: 1px solid #000;
+  display: flex;
+  font-weight: 600;
+  font-size: large;
+  flex-direction: column;
+  justify-content: center;
 }
 
-aside p{
-    text-align: left;
-}
-
-input{
-    border: 3px solid black;
+input {
+  border: 3px solid black;
 }
 
 .submit,
-.reset{
-    background-color: white;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+.reset {
+  background-color: rgb(245, 195, 137);
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
 }
 
 .info,
@@ -117,4 +124,47 @@ input{
   width: 100%;
   background-color: white;
   display: block;
+}
+
+.catalogue-item {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+  /* gap: 20px; */
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.catalogue-item img {
+  width: 100px;
+  height: auto;
+  margin: 1rem 2rem;
+}
+
+.book-info {
+  text-align: left;
+  margin-left: 5rem;
+  padding-right: 2rem;
+}
+
+.price{
+  font-weight: 600;
+}
+
+.add-to-cart {
+  cursor: pointer;
+  width: 200px;
+  border-radius: 0.8rem;
+  background-color: #f4b562;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.2rem;
+  margin-right: 6px;
+}
+
+button i{
+  border: 2px solid rgb(5, 28, 58);
+  background-color: #61e6f5;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-right: 1.3rem;
 }

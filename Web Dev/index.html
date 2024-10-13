@@ -1,73 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AKGEC Book Store</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="logo">
-        <img src="AKGEC_1_0.png" alt="" />
-      </div>
-      <div class="website center">AJAY KUMAR GARG ENGINNERIGN COLLEGE</div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#login">Login</a></li>
-          <li><a href="#registration">Registration</a></li>
-          <li><a href="#catalogue">Catalogue</a></li>
-          <li><a href="#cart">Cart</a></li>
-        </ul>
-      </nav>
-      <aside>
-        <p>CSE</p>
-        <p>ECE</p>
-        <p>EEE</p>
-        <p>CIVIL</p>
-      </aside>
-      <div class="home center">
-        <div id="home" class="home-page">
-          <h2>Welcome to the AKGEC Book Store</h2>
-          <p>
-            Here you can find a wide selection of books, stationery,
-            electronics, and apparel for all your academic and personal needs.
-            Browse our catalogue, create an account, and start shopping today!
-          </p>
-        </div>
-      </div>
-      <div class="info center">
-        <div id="login" class="login-page">
-          <h2>Login Page</h2>
-          <form>
-            <label for="username">User Name: &nbsp;</label>
-            <input type="text" id="username" name="username" /><br /><br />
-            <label for="password">Password:&nbsp; &nbsp;</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-            /><br /><br />
-            <button class="submit" type="submit">Submit</button>
-            <button class="reset" type="reset">Reset</button>
-          </form>
-          <br />
-        </div>
-        <div id="registration" class="registration-page">
-          <h2>Registration Page</h2>
-          <p>Registration form will be added here later.</p>
-        </div>
-        <div id="catalogue" class="catalogue-page">
-          <h2>Catalogue Page</h2>
-          <p>Catalogue details will be added here later.</p>
-        </div>
-        <div id="cart" class="cart-page">
-          <h2>Cart Page</h2>
-          <p>Cart details will be added here later.</p>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKGEC Book Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="AKGEC_1_0.png" alt="" />
+    </div>
+    <div class="website center">AJAY KUMAR GARG ENGINNERING COLLEGE</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar">
+      <p>CSE</p>
+      <p>ECE</p>
+      <p>EEE</p>
+      <p>CIVIL</p>
+    </div>
+    <div class="home center">
+      <div id="home" class="home-page">
+        <h2>Welcome to the AKGEC Book Store</h2>
+        <p>
+          Here you can find a wide selection of books, stationery,
+          electronics, and apparel for all your academic and personal needs.
+          Browse our catalogue, create an account, and start shopping today!
+        </p>
       </div>
     </div>
-  </body>
+
+    <div class="info center">
+      <div id="login" class="login-page">
+        <h3>Login Page</h3>
+        <form>
+          <label for="username">User Name: &nbsp;</label>
+          <input type="text" id="username" name="username" /><br /><br />
+          <label for="password">Password:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="password" id="password" name="password" required /><br /><br />
+          <button class="submit" type="submit">Submit</button>
+          <button class="reset" type="reset">Reset</button>
+        </form>
+        <br />
+      </div>
+
+      <div id="registration" class="registration-page">
+        <h2>Registration Page</h2>
+        <p>Registration form will be added here later.</p>
+      </div>
+
+      <div id="catalogue" class="catalogue-page">
+        <div class="catalogue-item">
+          <img src="XMLBible.jpg" alt="XML Bible">
+          <div class="book-info">
+            <h3>Book: XML Bible</h3>
+            <p>Author: Winston<br>
+              Publication: Wiley</br>
+          </div>
+          <div class="price">$40.5</div>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>ADD TO CART</span></button>
+        </div>
+        <div class="catalogue-item">
+          <img src="AI.jpg" alt="AI">
+          <div class="book-info">
+            <h3>Book: AI</h3>
+            <p>Author: S. Russel <br>
+              Publication: Princetonhall</p>
+          </div>
+          <div class="price">$63</div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span>ADD TO CART</span></button>
+        </div>
+        <div class="catalogue-item">
+          <img src="Java2.jpg" alt="AI">
+          <div class="book-info">
+            <h3>Book: Java 2</h3>
+            <p>Author: Watson <br>
+              Publication: BP Publication</p>
+          </div>
+          <div class="price">$35.5</div>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>ADD TO CART</span></button>
+        </div>
+        <div class="catalogue-item">
+          <img src="HTML.jpg" alt="AI">
+          <div class="book-info">
+            <h3>Book: HTML in 24 Hours</h3>
+            <p>Author: Sam Peter <br>
+              Publication: Sam Publication</p>
+          </div>
+          <div class="price">$50</div>
+
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>ADD TO CART</span></button>
+
+        </div>
+      </div>
+
+      <div id="cart" class="cart-page">
+        <h2>Cart Page</h2>
+        <p>Cart details will be added here later.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

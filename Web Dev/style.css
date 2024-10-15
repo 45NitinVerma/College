@@ -129,7 +129,6 @@ input {
 .catalogue-item {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
-  /* gap: 20px; */
   align-items: center;
   border-bottom: 1px solid #ccc;
 }

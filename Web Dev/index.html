@@ -48,9 +48,9 @@
         <h3>Login Page</h3>
         <form>
           <label for="username">User Name: &nbsp;</label>
-          <input type="text" id="username" name="username" /><br /><br />
+          <input type="text" id="username" name="username" placeholder="Enter username"/><br /><br />
           <label for="password">Password:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-          <input type="password" id="password" name="password" required /><br /><br />
+          <input type="password" id="password" name="password" required  placeholder="Enter password"/><br /><br />
           <button class="submit" type="submit">Submit</button>
           <button class="reset" type="reset">Reset</button>
         </form>
@@ -58,8 +58,32 @@
       </div>
 
       <div id="registration" class="registration-page">
-        <h2>Registration Page</h2>
-        <p>Registration form will be added here later.</p>
+        <h3>Registration Page</h3>
+        <form action="#" class="form">
+          <label for="name">Name: &nbsp;</label>
+          <input type="text" id="name" placeholder="Enter name"><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password"><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter email"><br><br>
+          <label for="sex">Sex:</label>
+          <input type="radio" name="sex">Male
+          <input type="radio" name="sex">Female  
+          <input type="radio" name="sex">Others <br><br>
+          <label for="">Date of Birth:</label>
+          <input type="date"><br><br>
+          <label for="">Language known:</label>
+          <input type="checkbox">Hindi
+          <input type="checkbox">English
+          <input type="checkbox">Telugu
+          <input type="checkbox">Tamil <br><br>
+          <label for="">Address: </label><br>
+          <textarea placeholder="Enter address" rows="4" cols="50"></textarea> <br> <br>
+          <div class="sub-res">
+            <button class="submit" type="submit">Submit</button>
+            <button class="reset" type="reset">Reset</button>
+          </div>
+        </form>
       </div>
 
       <div id="catalogue" class="catalogue-page">
@@ -116,8 +140,34 @@
       </div>
 
       <div id="cart" class="cart-page">
-        <h2>Cart Page</h2>
-        <p>Cart details will be added here later.</p>
+        <table>
+          <thead>
+              <tr>
+                  <th>Book name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Amount</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Java 2</td>
+                  <td>$35.5</td>
+                  <td>2</td>
+                  <td>$70</td>
+              </tr>
+              <tr>
+                  <td>XML bible</td>
+                  <td>$40.5</td>
+                  <td>1</td>
+                  <td>$40.5</td>
+              </tr>
+              <tr class="total">
+                  <td colspan="3">Total amount</td>
+                  <td>$110.5</td>
+              </tr>
+          </tbody>
+      </table>
       </div>
     </div>
   </div>

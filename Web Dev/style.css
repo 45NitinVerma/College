@@ -85,14 +85,19 @@ nav ul li a {
 }
 
 input {
-  border: 3px solid black;
+  margin: 2px;
+  border: 1px solid black;
+}
+
+.login-page label{
+  font-weight: 700;
 }
 
 .submit,
 .reset {
   background-color: rgb(245, 195, 137);
   padding: 0.5rem;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   margin-right: 0.5rem;
 }
@@ -166,4 +171,44 @@ button i{
   border-radius: 50%;
   padding: 0.4rem;
   margin-right: 1.3rem;
+}
+
+.cart-page{
+  padding: 1rem;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart th, #cart td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#cart th {
+  background-color: #f2f2f2;
+}
+
+#cart tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#cart tr:hover {
+  background-color: #f5f5f5;
+}
+
+#cart .total {
+  font-weight: bold;
+}
+
+.registration-page form{
+  padding: 1rem;
+  text-align: left;
+}
+
+.registration-page label{
+  font-weight: 700;
 }

@@ -212,3 +212,7 @@ button i{
 .registration-page label{
   font-weight: 700;
 }
+
+.invalid {
+  border: 1px solid red;
+}

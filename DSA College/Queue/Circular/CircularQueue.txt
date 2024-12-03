@@ -1,0 +1,51 @@
+1. Enqueue (Insert an element)
+
+Input: Queue q, element value
+
+Algorithm:
+1. Check if the queue is full:
+   - If (rear + 1) % size == front, the queue is full; print "Queue Overflow" and return.
+2. If the queue is empty (i.e., front == -1):
+   - Set front = 0.
+3. Increment rear to the next position: rear = (rear + 1) % size.
+4. Insert value at q[rear].
+5. Print a message indicating that the value was enqueued.
+
+---
+
+2. Dequeue (Remove an element)
+
+Input: Queue q
+
+Algorithm:
+1. Check if the queue is empty:
+   - If front == -1, the queue is empty; print "Queue Underflow" and return.
+2. Store the front element (q[front]) for printing or returning.
+3. Check if this is the last element in the queue:
+   - If front == rear, set front = -1 and rear = -1 to mark the queue as empty.
+4. Otherwise, move front to the next position: front = (front + 1) % size.
+5. Print a message indicating the dequeued value.
+
+---
+
+3. Peek (Get the front element)
+
+Input: Queue q
+
+Algorithm:
+1. Check if the queue is empty:
+   - If front == -1, the queue is empty; print "Queue is empty" and return.
+2. Print the front element (q[front]).
+
+---
+
+4. Display (Show all elements in the queue)
+
+Input: Queue q
+
+Algorithm:
+1. Check if the queue is empty:
+   - If front == -1, the queue is empty; print "Queue is empty" and return.
+2. Start from front and move towards rear:
+   - For each position i from front to rear, use i = (i + 1) % size to move circularly.
+3. Print each element from front to rear. 

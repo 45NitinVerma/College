@@ -1,0 +1,91 @@
+Doubly Ended Queue Algorithms
+
+1. Insertion at Front
+
+Input: Deque dq, element value
+
+Algorithm:
+1. Check if the deque is full:
+   - If it is full, print "Deque Overflow" and return.
+2. If the deque is empty (i.e., front == -1):
+   - Set front = 0 and rear = 0.
+3. Otherwise, move front to the previous position:
+   - If front == 0, set front = size - 1 (circular behavior).
+   - Otherwise, decrement front by 1.
+4. Insert value at dq[front].
+5. Print a message indicating that the value was inserted at the front.
+
+---
+
+2. Insertion at Rear
+
+Input: Deque dq, element value
+
+Algorithm:
+1. Check if the deque is full:
+   - If it is full, print "Deque Overflow" and return.
+2. If the deque is empty (i.e., front == -1):
+   - Set front = 0 and rear = 0.
+3. Otherwise, move rear to the next position:
+   - If rear == size - 1, set rear = 0 (circular behavior).
+   - Otherwise, increment rear by 1.
+4. Insert value at dq[rear].
+5. Print a message indicating that the value was inserted at the rear.
+
+---
+
+3. Deletion from Front
+
+Input: Deque dq
+
+Algorithm:
+1. Check if the deque is empty:
+   - If front == -1, print "Deque Underflow" and return.
+2. Store the front element for printing or returning.
+3. Check if front and rear are the same (only one element in the deque):
+   - If true, set front = -1 and rear = -1 to mark deque as empty.
+4. Otherwise, move front to the next position:
+   - If front == size - 1, set front = 0 (circular behavior).
+   - Otherwise, increment front by 1.
+5. Print a message indicating the deleted value.
+
+---
+
+4. Deletion from Rear
+
+Input: Deque dq
+
+Algorithm:
+1. Check if the deque is empty:
+   - If front == -1, print "Deque Underflow" and return.
+2. Store the rear element for printing or returning.
+3. Check if front and rear are the same (only one element in the deque):
+   - If true, set front = -1 and rear = -1 to mark deque as empty.
+4. Otherwise, move rear to the previous position:
+   - If rear == 0, set rear = size - 1 (circular behavior).
+   - Otherwise, decrement rear by 1.
+5. Print a message indicating the deleted value.
+
+---
+
+5. Peek (Get the front element)
+
+Input: Deque dq
+
+Algorithm:
+1. Check if the deque is empty:
+   - If front == -1, the deque is empty; print "Deque is empty" and return.
+2. Print the front element (dq[front]).
+
+---
+
+6. Display (Show all elements in the deque)
+
+Input: Deque dq
+
+Algorithm:
+1. Check if the deque is empty:
+   - If front == -1, the deque is empty; print "Deque is empty" and return.
+2. Start from front and move towards rear:
+   - For each position i from front to rear, use i = (i + 1) % size to move circularly.
+3. Print each element from front to rear.

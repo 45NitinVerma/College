@@ -1,39 +1,39 @@
 /* Font and style definitions */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/api/placeholder/1600/900');
+    background-image: url('image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: #333;
+    color: #fff;
     line-height: 1.6;
 }
 
 /* Custom font styles for different selectors */
 .title {
     font-family: 'Georgia', serif;
-    color: #2c3e50;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .subtitle {
     font-family: 'Courier New', monospace;
-    color: #34495e;
+    color: #ffffff;
     font-style: italic;
 }
 
 .content {
     font-family: 'Verdana', sans-serif;
-    color: #2980b9;
+    color: #ffffff;
 }
 
 /* Element with background image */
 .image-box {
     width: 300px;
     height: 200px;
-    background-image: url('/api/placeholder/300/200');
+    background-image: url('./CS.jpg');
     background-size: cover;
     background-position: center;
     margin: 20px 0;
-    border: 3px solid #3498db;
+    border: 3px solid #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }

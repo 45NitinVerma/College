@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .survey-container {
+            background-color: white;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .survey-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .radio-group, 
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .survey-container {
+                width: 95%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-container">
+        <h2 class="survey-title">Customer Feedback Survey</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>How satisfied are you with our service?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="neutral"> Neutral
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Which services did you use? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="services" value="product-support"> Product Support
+                    </label>
+                    <label>
+                        <input type="checkbox" name="services" value="technical-support"> Technical Support
+                    </label>
+                    <label>
+                        <input type="checkbox" name="services" value="sales"> Sales
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Preferred Contact Department</label>
+                <select id="department" name="department">
+                    <option value="">Select a Department</option>
+                    <option value="support">Customer Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="billing">Billing</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>

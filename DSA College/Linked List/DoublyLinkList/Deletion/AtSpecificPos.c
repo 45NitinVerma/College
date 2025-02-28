@@ -32,7 +32,7 @@ int main() {
     } else {
         // Traverse to find the node to delete
         temp = head;
-        for(i = 1; i < pos && temp != NULL; i++) {
+        for(i = 1; i < pos-1 && temp != NULL; i++) {
             temp = temp->next;
         }
 

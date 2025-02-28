@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background and Link Styles Demo</title>
+    <style>
+        body{
+            margin: 2rem;
+        }
+        /* Background Repeat Examples */
+        .no-repeat-bg {
+            background-image: url('CS.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 75px;
+            margin-bottom: 20px;
+        }
+
+        .repeat-x-bg {
+            background-image: url('CS.jpg');
+            background-size: contain;
+            background-repeat: repeat-x;
+            height: 75px;
+            margin-bottom: 20px;
+        }
+
+        .repeat-y-bg {
+            background-image: url('CS.jpg');
+            background-size: contain;
+            background-repeat: repeat-y;
+            height: 150px;
+            width: 100px
+        }
+
+        /* Link Styles */
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .link-container a {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Repeat</h1>
+    
+    <div class="box">
+        <h2>No Repeat Background</h2>
+        <div class="no-repeat-bg"></div>
+
+        <h2>Repeat Horizontally (repeat-x)</h2>
+        <div class="repeat-x-bg"></div>
+
+        <h2>Repeat Vertically (repeat-y)</h2>
+        <div class="repeat-y-bg"></div>
+    </div>
+
+    <div class="link-container">
+        <h1>Link Styles</h1>
+        
+        <a href="https://www.sample.com">Link</a>
+        
+    </div>
+</body>
+</html>

@@ -7,9 +7,12 @@ struct Node {
 };
 
 int main() {
-    struct Node* head = NULL;
+    struct Node* head =(struct Node*)malloc(sizeof(struct Node));
+    head->data = 45;
+    head->next = NULL;
+
     struct Node* newNode, *temp;
-    int value, pos, i;
+    int value, pos;
 
     printf("Enter value to insert: ");
     scanf("%d", &value);
@@ -25,7 +28,7 @@ int main() {
         head = newNode;
     } else {
         temp = head;
-        for(i = 0; i <= pos - 1 && temp != NULL; i++) {
+        for(int i = 1; i < pos - 1 && temp != NULL; i++) {
             temp = temp->next;
         }
 
